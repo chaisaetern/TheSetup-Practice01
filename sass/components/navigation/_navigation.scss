@@ -1,3 +1,17 @@
+.site-header {
+	height: 10vh;
+	width: 100%;
+	background: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.site-branding {
+		width: 10vw;
+	}
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -7,6 +21,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		float: right;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -51,15 +66,28 @@
 
 	li {
 		position: relative;
+		margin: 1rem;
+		font-size: 1.25rem;
+		letter-spacing: 1px;
 
 		&:hover > a,
 		&.focus > a {
+			
 		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
+		transition: 0.25s;
+
+		&:hover {
+			color: blue;
+		}
+
+		&:active {
+			color: red;
+		}
 	}
 
 	.current_page_item > a,
