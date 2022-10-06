@@ -629,14 +629,22 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  padding: 0 10px;
 }
 .site-header .site-branding {
-  width: 10vw;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0 0 1rem;
 }
 
 .main-navigation {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
+  height: 100%;
 }
 .main-navigation ul {
   display: none;
@@ -670,7 +678,6 @@ textarea {
 }
 .main-navigation li {
   position: relative;
-  margin: 1rem;
   font-size: 1.25rem;
   letter-spacing: 1px;
 }
@@ -678,9 +685,14 @@ textarea {
   display: block;
   text-decoration: none;
   transition: 0.25s;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 25px;
+  width: 100%;
+  height: 100%;
 }
 .main-navigation a:hover {
-  color: blue;
+  color: gold;
 }
 .main-navigation a:active {
   color: red;
@@ -722,6 +734,48 @@ textarea {
   flex: 1 0 50%;
 }
 
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background: #000;
+}
+.site-footer .footer-col-1,
+.site-footer .footer-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.site-footer .footer-col-1 h2, .site-footer .footer-col-1 p, .site-footer .footer-col-1 a,
+.site-footer .footer-col-2 h2,
+.site-footer .footer-col-2 p,
+.site-footer .footer-col-2 a {
+  margin: 0;
+  text-decoration: none;
+  transition: 0.25s;
+  color: #fff;
+}
+.site-footer .footer-col-1 h2,
+.site-footer .footer-col-2 h2 {
+  color: gold;
+}
+.site-footer .footer-col-1 a:hover,
+.site-footer .footer-col-2 a:hover {
+  color: gold;
+  text-shadow: 0 0 1px gold;
+}
+.site-footer .footer-col-1 ul, .site-footer .footer-col-1 ol,
+.site-footer .footer-col-2 ul,
+.site-footer .footer-col-2 ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -730,7 +784,7 @@ textarea {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
 .updated:not(.published) {
