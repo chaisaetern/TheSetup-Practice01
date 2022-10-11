@@ -460,6 +460,8 @@ big {
 body {
   background: #fff;
   font-family: "Gemunu Libre", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 hr {
@@ -624,13 +626,14 @@ textarea {
 .site-header {
   height: 10vh;
   width: 100%;
-  background: #000;
+  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   padding: 0 10px;
+  z-index: 9999999;
 }
 .site-header .site-branding {
   width: 5rem;
@@ -748,7 +751,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .site-footer .footer-col-1 h2, .site-footer .footer-col-1 p, .site-footer .footer-col-1 a,
 .site-footer .footer-col-2 h2,
@@ -800,6 +803,56 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero > img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.35);
+  position: absolute;
+  top: -15em;
+  left: 0;
+}
+.hero .hero-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 99;
+  position: relative;
+}
+.hero .hero-content .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-shadow: 0 0 1px #000;
+  margin: 0 1em;
+}
+.hero .hero-content .hero-text h2 {
+  font-size: 5em;
+  margin: 0;
+}
+.hero .hero-content .hero-text p {
+  max-width: 350px;
+  width: calc(100% + 10px);
+  text-align: justify;
+  font-size: 1.2em;
+  text-indent: 1em;
 }
 
 /* Comments

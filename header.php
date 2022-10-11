@@ -17,6 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!-- Font Awesome Kit -->
+	<script src="https://kit.fontawesome.com/8ea15955cd.js" crossorigin="anonymous"></script>
+
 	<?php wp_head(); ?>
 </head>
 

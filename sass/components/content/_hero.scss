@@ -1,0 +1,58 @@
+
+
+.hero {
+    height: 70vh;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & > img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.35);
+        position: absolute;
+        top: -15em;
+        left: 0;
+    }
+    
+    .hero-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 99;
+        position: relative;
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-shadow: 0 0 1px #000;
+            margin: 0 1em;
+            
+            h2 {
+                font-size: 5em;
+                margin: 0;
+            }
+
+            p {
+                max-width: 350px;
+                width: calc(100% + 10px);
+                text-align: justify;
+                font-size: 1.2em;
+                text-indent: 1em;
+            }
+        }
+
+    }
+
+}

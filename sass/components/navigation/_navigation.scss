@@ -1,13 +1,14 @@
 .site-header {
 	height: 10vh;
 	width: 100%;
-	background: #000;
+	background: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
 	padding: 0 10px;
+	z-index: 9999999;
 
 	.site-branding {
 		width: 5rem;
